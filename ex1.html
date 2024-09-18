@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first program javascript</title>
+</head>
+
+<body>
+    <!--<P>Hello</P>-->
+    <P style="font-size: larger;">Hello</P>
+
+    <p id="p1">Texto a ser modificado</p>
+    <p id="p2">outro paragrafo</p>
+
+    <label for="numero">Nùmero</label>
+    <input type="text" id="numero" value="" name="numEntrada">
+
+    <label for="total">Resultado</label>
+    <input type="text" id="total" name="Resultado">
+
+    <input type="button" value="multiplicar 5" onclick="multiplicarPorDois()">
+
+    <input type="button" value="Dividir 5" onclick="dividir()">
+
+    <input type="button" value="zerar0" onclick="zerar()">
+
+
+
+
+<Script>
+   /* var nome = window.prompt("seu nome")
+    window.alert('É um prazer,' + nome + '!')*/
+    /*window.confirm("ok")*/
+   // window.prompt("ok")
+
+   var n1 = Number.parseInt(window.prompt('numero 1'));
+   var n2 = Number.parseInt(window.prompt('numero 2'));
+   var s = n1 + n2;
+   window.alert('soma é:, '+ String(s));
+   //window.alert('a soma entre ${n1} e ${n2} é igual a ${s}');
+
+
+
+        function multiplicarPorDois()
+        {
+        varx=document.getElementById("p1");
+        vary=document.getElementById("p2");
+
+        varNum = document.getElementById("numero");
+        totalLG= Number(varNum.value)*5;
+        document.getElementById('total').value =totalLG;
+        }
+
+        function dividir()
+        {
+        varx=document.getElementById("p1");
+        vary=document.getElementById("p2");
+
+        varNum = document.getElementById("numero");
+        totalLG= Number(varNum.value)/5;
+        document.getElementById('total').value =totalLG;
+        }
+
+        function zerar()
+        {
+        varx=document.getElementById("p1");
+        vary=document.getElementById("p2");
+
+        varNum = document.getElementById("numero");
+        totalLG="0";
+        
+        document.getElementById('total').value =totalLG;
+        document.getElementById('numero').value =totalLG;
+        
+        }
+
+</Script>
+
+</body>
+</html>
