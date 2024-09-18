@@ -1,0 +1,33 @@
+body {
+    background-color: cornflowerblue;
+}
+
+header{
+    color: white;
+    font: normal 20pt arial;
+    text-align: center;
+    margin-top:150px;
+}
+
+section {
+    font: normal 12pt arial;
+    background-color: white;
+    padding: 30px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+select#flista{
+width: 150px;
+}
+
+footer{
+    font: normal 12pt arial;
+    color: white;
+    text-align: center;
+}
